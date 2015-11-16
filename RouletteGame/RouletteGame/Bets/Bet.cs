@@ -1,6 +1,6 @@
-﻿using System.Security.AccessControl;
+﻿using RouletteGame.Roulette;
 
-namespace RouletteGame
+namespace RouletteGame.Bets
 {
     public class Bet : IBet
     {

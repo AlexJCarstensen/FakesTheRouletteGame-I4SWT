@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RouletteGame</RootNamespace>
     <AssemblyName>RouletteGame</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -28,6 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -39,14 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bet.cs" />
-    <Compile Include="ColorBet.cs" />
-    <Compile Include="EvenOddBet.cs" />
-    <Compile Include="Field.cs" />
-    <Compile Include="IBet.cs" />
-    <Compile Include="IRoulette.cs" />
-    <Compile Include="NumberBet.cs" />
-    <Compile Include="Roulette.cs" />
+    <Compile Include="Bets\Bet.cs" />
+    <Compile Include="Bets\ColorBet.cs" />
+    <Compile Include="Bets\EvenOddBet.cs" />
+    <Compile Include="Roulette\Field.cs" />
+    <Compile Include="Bets\IBet.cs" />
+    <Compile Include="Roulette\IRoulette.cs" />
+    <Compile Include="Bets\FieldBet.cs" />
+    <Compile Include="Roulette\Roulette.cs" />
     <Compile Include="RouletteGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

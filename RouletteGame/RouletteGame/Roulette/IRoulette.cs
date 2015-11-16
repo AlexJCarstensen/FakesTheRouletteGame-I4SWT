@@ -1,4 +1,4 @@
-﻿namespace RouletteGame
+﻿namespace RouletteGame.Roulette
 {
     public interface IRoulette
     {

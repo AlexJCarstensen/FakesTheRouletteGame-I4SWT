@@ -1,9 +1,11 @@
-﻿namespace RouletteGame
+﻿using RouletteGame.Roulette;
+
+namespace RouletteGame.Bets
 {
-    public class NumberBet : Bet
+    public class FieldBet : Bet
     {
         private readonly uint _fieldNumber;
-        public NumberBet(string playerName, uint amount, uint fieldNumber) : base(playerName, amount)
+        public FieldBet(string playerName, uint amount, uint fieldNumber) : base(playerName, amount)
         {
             _fieldNumber = fieldNumber;
         }

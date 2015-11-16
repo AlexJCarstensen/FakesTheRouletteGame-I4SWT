@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace RouletteGame
+namespace RouletteGame.Roulette
 {
     public class Roulette : IRoulette
     {

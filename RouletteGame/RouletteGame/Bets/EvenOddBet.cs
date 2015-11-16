@@ -1,4 +1,6 @@
-namespace RouletteGame
+using RouletteGame.Roulette;
+
+namespace RouletteGame.Bets
 {
     public class EvenOddBet : Bet
     {

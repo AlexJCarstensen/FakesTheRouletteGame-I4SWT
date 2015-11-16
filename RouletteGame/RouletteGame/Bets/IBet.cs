@@ -1,6 +1,6 @@
-﻿using System;
+﻿using RouletteGame.Roulette;
 
-namespace RouletteGame
+namespace RouletteGame.Bets
 {
     public interface IBet
     {
