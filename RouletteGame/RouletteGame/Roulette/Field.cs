@@ -2,11 +2,11 @@
 
 namespace RouletteGame.Roulette
 {
-    public class Field
+    public class Field : IField
     {
         public const uint Red = 0;
         public const uint Black = 1;
-        public const uint Green = 1;
+        public const uint Green = 2;
 
         private uint _number;
         public uint Number

@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using RouletteGame.Bets;
+using RouletteGame.Roulette;
 
 namespace RouletteGame
 {
     public class RouletteGame
     {
-        private Roulette.Roulette _roulette;
+        private readonly IRoulette _roulette;
         private bool _roundIsOpen;
-        private List<Bet> _bets;
+        private readonly List<Bet> _bets;
 
-        public RouletteGame(Roulette.Roulette roulette)
+        public RouletteGame(IRoulette roulette)
         {
             _bets = new List<Bet>();
             _roulette = roulette;
